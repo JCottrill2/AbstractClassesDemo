@@ -43,10 +43,10 @@ namespace ConsoleUI
              * - new it up as one of each derived class
              * Set the properties with object initializer syntax
              */
-            Car journey=new Car() { HasTrunk = true, Make = "Dodge", Model = "Journey", Year = 2016 };
+            Car journey = new Car() { HasTrunk = true, Make = "Dodge", Model = "Journey", Year = 2016 };
             Motorcycle motorcycle = new Motorcycle() { HasSideCar = true, Make = "Harley Davidson", Model = "Chopper", Year = 1989 };
 
-            Vehicle suv = new Car() {HasTrunk = true, Make = "Ford", Model = "Escape", Year = 2021 };
+            Vehicle suv = new Car() { HasTrunk = true, Make = "Ford", Model = "Escape", Year = 2021 };
             Vehicle truck = new Car() { HasTrunk = false, Make = "Chevrolet", Model = "Silverado", Year = 2000 };
 
             /*
@@ -58,9 +58,9 @@ namespace ConsoleUI
             vehicles.Add(suv);
             vehicles.Add(truck);
 
-            foreach(var vehicle in vehicles)
+            foreach (var vehicle in vehicles)
             {
-                Console.WriteLine($"Make{vehicle.Make} Model {vehicle.Model} Year {vehicle.Year}");
+                Console.WriteLine($"Make {vehicle.Make} Model {vehicle.Model} Year {vehicle.Year}");
                 vehicle.DriveAbstract();
                 Console.WriteLine();
             }

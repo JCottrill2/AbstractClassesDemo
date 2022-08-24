@@ -13,7 +13,7 @@ namespace ConsoleUI
 
         public override void DriveAbstract()
         {
-            Console.WriteLine("This car is in dr");
+            Console.WriteLine("This car is in drive");
         }
     }
 }
